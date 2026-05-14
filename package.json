@@ -1,0 +1,25 @@
+{
+  "name": "codespaces-blank",
+  "version": "1.0.0",
+  "description": "Quiitaの記事からコードを作成、課題を提出します",
+  "main": "j2336express01.js",
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itsuki-Houri/codespaces-blank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Itsuki-Houri/codespaces-blank/issues"
+  },
+  "homepage": "https://github.com/Itsuki-Houri/codespaces-blank#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
