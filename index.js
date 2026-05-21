@@ -1,13 +1,36 @@
-const express=require('express');
-const app=express();
+const express = require('express');
+const app = express();
 
-app.get('/users/:id',function(req,res,next){
-    next()
-},function(req,res){
-    res.send('User ID'+req.params.id)
+// GETリクエスト
+app.get('/', (req, res) => {
+  res.send({
+    msg:'GET request'
+  });
 });
 
-app.listen(3000,()=>{
-    console.log('Server llistening on port 3000');
+// POSTリクエスト
+app.post('/', (req, res) => {
+  res.send({
+    msg:'POST request'
+  });
 });
 
+// PUTリクエスト
+app.put('/:id', (req, res) => {
+  res.send({
+    id: req.params.id,
+    msg:'PUT request'
+  });
+});
+
+// DELETEリクエスト
+app.delete('/:id', (req, res) => {
+  res.send({
+    id: req.params.id,
+    msg:'DELETE request'
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
